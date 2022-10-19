@@ -1,0 +1,26 @@
+.contents__title {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.contents__list {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.contents__list-item {
+  margin: 0 0 10px 0;
+}
+
+.contents__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.contents__list-item::marker,
+.contents__list-item-link {
+  font-size: 20px;
+  line-height: 120%;
+  color: #02535f;
+}

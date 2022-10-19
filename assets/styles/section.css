@@ -1,0 +1,18 @@
+.section__figure {
+  display: flow-root;
+  margin-bottom: 30px;
+}
+
+.section__figure:last-child {
+  margin-bottom: 0;
+}
+
+.section__image_float-left {
+  float: left;
+  margin-right: 30px;
+}
+
+.section__image_float-right {
+  float: right;
+  margin-left: 30px;
+}

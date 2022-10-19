@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учебный проект Indentation</title>
+    <link
+      rel="preload"
+      href="./assets/fonts/roboto-v30-latin_cyrillic-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/roboto-v30-latin_cyrillic-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/roboto-v30-latin_cyrillic-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/roboto-v30-latin_cyrillic-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
+    <article class="article">
+      <header class="header">
+        <div class="container container_inner">
+          <h1 class="header_title">Отступы в вёрстке: margin и padding</h1>
+          <p class="paragraph">
+            В этой статье я рассмотрю самые популярные "стандартные" решения для
+            сохранения смысла и хорошей читаемости вашего кода. Если точнее —
+            речь пойдет об основных правилах организации отступов. Они сильно
+            влияют на общую функциональность кода и, если всё сделано верно,
+            позволяют легко вносить изменения в любую его часть. При этом другие
+            части кода продолжат нормально работать.
+          </p>
+          <p class="paragraph">
+            Как это часто бывает, знание базовых принципов поможет проявить
+            гибкость и выйти за их пределы. Эти знания особенно важны для
+            начинающих, но также будут полезным напоминанием и для более опытных
+            верстальщиков. Итак, поговорим о фундаментальных основах работы с
+            отступами в вёрстке.
+          </p>
+        </div>
+      </header>
+
+      <section class="section contents">
+        <div class="container container_bgcolor-grey">
+          <h2 class="contents__title">Содержание:</h2>
+          <ol class="contents__list">
+            <li class="contents__list-item">
+              <a href="#section-1" class="contents__list-item-link">
+                Отступ задается от предыдущего элемента к следующему
+              </a>
+            </li>
+            <li class="contents__list-item">
+              <a href="#" class="contents__list-item-link">
+                Отступ задается последнему возможному элементу в DOM-дереве
+              </a>
+            </li>
+            <li class="contents__list-item">
+              <a href="#" class="contents__list-item-link">
+                Для последнего элемента группы отступ обнуляется
+              </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="section" id="section-1">
+        <div class="container container_inner">
+          <h2 class="section__title">
+            Отступ задается от предыдущего элемента к следующему: от первого ко
+            второму, сверху вниз, слева направо.
+          </h2>
+          <figure class="section__figure">
+            <img
+              class="section__image section__image_float-left"
+              src="./assets/images/image_1.jpg"
+              alt="Изображение с примером отступов margin между четырьмя блоками"
+            />
+            <figcaption>
+              <p class="paragraph">
+                <strong>ВАЖНО:</strong> <em>margin</em> всегда задают от
+                предыдущего элемента к следующему.
+              </p>
+              <p class="paragraph">
+                Свойство <em>margin</em> необходимо только для того, чтобы
+                отодвинуть своего соседа справа или снизу, поэтому используется
+                <em>margin-right</em> и <em>margin-bottom</em>.
+              </p>
+              <p class="paragraph">
+                (!) Свойства <em>margin-left</em> и
+                <em>margin-top</em> используются крайне редко.
+              </p>
+              <p class="paragraph">
+                Для <em>padding</em> верно обратное. Исключением является его
+                применения в декоративных целях, например, для увеличения
+                области ссылки.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="section__figure">
+            <figcaption>
+              <img
+                class="section__image section__image_float-right"
+                src="./assets/images/image_2.jpg"
+                alt="Изображение с примером отступа padding блока"
+              />
+              <p class="paragraph">
+                Отступ внутри блока сверху или слева реализуется&nbsp;через
+                <em>padding-top</em> и <em>padding-left родителя</em>.
+              </p>
+              <p class="paragraph">
+                Отступы, как правило, делают в направлении от предыдущего
+                элемента к следующему. Так элемент не будет толкать сам себя.
+              </p>
+              <p class="paragraph">
+                Изначально элемент статичен, а его положение может меняться
+                только под воздействием свойств других блоков или свойств
+                родителя.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
