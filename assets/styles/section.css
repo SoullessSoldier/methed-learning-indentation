@@ -28,12 +28,6 @@
   margin-bottom: 0;
 }
 
-.section__paragraph_figure {
-  font-weight: 700;
-  color: #5e5e5e;
-  text-align: center;
-}
-
 .section__subsection {
   margin-bottom: 30px;
 }
@@ -73,4 +67,12 @@
 
 .section__figure-figcaption {
   padding: 15px 30px;
+}
+
+.section__figure-paragraph {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #5e5e5e;
+  text-align: center;
 }
