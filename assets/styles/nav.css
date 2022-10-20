@@ -1,25 +1,30 @@
-.contents__title {
+.nav_padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav__title {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
 }
 
-.contents__list {
+.nav__list {
   margin: 0 0 0 20px;
   padding: 0;
 }
 
-.contents__list-item {
+.nav__item {
   margin: 0 0 10px 0;
 }
 
-.contents__list-item:last-child {
+.nav__item:last-child {
   margin-bottom: 0;
 }
 
-.contents__list-item::marker,
-.contents__list-item-link {
+.nav__item::marker,
+.nav__link {
   font-size: 20px;
   line-height: 120%;
   color: #02535f;
