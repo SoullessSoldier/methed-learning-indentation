@@ -1,5 +1,7 @@
 @import "./fonts.css";
 @import "./default.css";
+@import "./header.css";
 @import "./nav.css";
-@import "./section.css";
-@import "./summary.css";
+@import "./main.css";
+@import "./article.css";
+@import "./additional-block.css";

@@ -1,35 +1,36 @@
-.summary {
+.additional-block {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.summary__title {
-  margin-bottom: 20px;
+
+.additional-block__title {
+  margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
 }
 
-.summary__list {
+.additional-block__list {
   margin-bottom: 30px;
   list-style: "—" inside;
 }
 
-.summary__item {
+.additional-block__item {
   margin-bottom: 10px;
   font-size: 20px;
   line-height: 120%;
 }
 
-.summary__item:last-child {
+.additional-block__item:last-child {
   margin-bottom: 0;
 }
 
-.summary__paragraph {
+.additional-block__paragraph {
   margin-bottom: 30px;
   font-size: 20px;
   line-height: 120%;
 }
 
-.summary__paragraph:last-child {
+.additional-block__paragraph:last-child {
   margin-bottom: 0;
 }

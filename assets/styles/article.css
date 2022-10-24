@@ -1,75 +1,79 @@
-.section_padding {
+.article {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.section_padding:last-child {
+.article:first-child {
+  padding-top: 0;
+}
+
+.article:last-child {
   padding-bottom: 0;
 }
 
-.section__title {
+.article__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 36px;
   line-height: 120%;
 }
 
-.section__title_top {
-  font-size: 60px;
-}
-
-.section__paragraph {
+.article__paragraph {
   margin-bottom: 30px;
   font-size: 20px;
   line-height: 120%;
 }
 
-.section__paragraph:last-child {
+.article__paragraph:last-child {
   margin-bottom: 0;
 }
 
-.section__subsection {
+.article__subsection {
   margin-bottom: 30px;
 }
 
-.section__subsection_flow-root {
+.article__subsection_flow-root {
   display: flow-root;
 }
 
-.section__subsection:last-child {
+.article__subsection:last-child {
   margin-bottom: 0;
 }
 
-.section__image {
+.article__image {
   margin: 0 auto 30px;
   display: block;
 }
 
-.section__image_float-left {
+.article__image:last-child {
+  margin: 0 auto;
+}
+
+.article__image_float-left {
   float: left;
   margin: 0 30px 0 0;
 }
 
-.section__image_float-right {
+.article__image_float-right {
   float: right;
   margin: 0 0 0 30px;
 }
 
-.section__figure {
+.article__figure {
   margin-bottom: 30px;
   border: 1px solid black;
 }
 
-.section__figure-image {
+.article__figure-image {
   display: block;
   width: 100%;
 }
 
-.section__figure-figcaption {
+.article__figure-figcaption {
   padding: 15px 30px;
 }
 
-.section__figure-paragraph {
+.article__figure-paragraph {
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;

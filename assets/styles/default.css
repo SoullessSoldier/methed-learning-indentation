@@ -31,22 +31,14 @@ a:hover {
   text-underline-offset: 4px;
 }
 
-.article {
-  padding: 60px 0 50px;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1140px;
+}
+
+.container_additional-block {
   border-radius: 10px;
-}
-
-.container_nav {
-  padding: 25px 45px;
-}
-
-.container_summary {
   padding: 25px 30px 25px 45px;
 }
 
