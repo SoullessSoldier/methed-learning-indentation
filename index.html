@@ -36,8 +36,6 @@
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
-    <!-- <article class="article"> -->
-    <!-- <section class="section section_padding"> -->
     <header class="header">
       <div class="container container_header">
         <h1 class="header__title">Отступы в вёрстке: margin и padding</h1>
@@ -57,8 +55,6 @@
           отступами в вёрстке.
         </p>
       </div>
-      <!-- </header> -->
-      <!-- </section> -->
 
       <div class="additional-block">
         <div
@@ -87,110 +83,110 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <article class="article" id="indent-prev-next">
+    <div class="main">
+      <section class="section" id="indent-prev-next">
         <div class="container">
-          <h2 class="article__title">
+          <h2 class="section__title">
             Отступ задается от предыдущего элемента к следующему: от первого ко
             второму, сверху вниз, слева направо.
           </h2>
-          <div class="article__subsection article__subsection_flow-root">
+          <div class="section__subsection section__subsection_flow-root">
             <img
-              class="article__image article__image_float-left"
+              class="section__image section__image_float-left"
               src="./assets/images/image_1.jpg"
               alt="Изображение с примером отступов margin между четырьмя блоками"
             />
 
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               <b>ВАЖНО:</b> <i>margin</i> всегда задают от предыдущего элемента
               к следующему.
             </p>
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               Свойство <i>margin</i> необходимо только для того, чтобы
               отодвинуть своего соседа справа или снизу, поэтому используется
               <i>margin-right</i> и <i>margin-bottom</i>.
             </p>
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются
               крайне редко.
             </p>
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               Для <i>padding</i> верно обратное. Исключением является его
               применения в декоративных целях, например, для увеличения области
               ссылки.
             </p>
           </div>
-          <div class="article__subsection article__subsection_flow-root">
+          <div class="section__subsection section__subsection_flow-root">
             <img
-              class="article__image article__image_float-right"
+              class="section__image section__image_float-right"
               src="./assets/images/image_2.jpg"
               alt="Изображение с примером отступа padding блока"
             />
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               Отступ внутри блока сверху или слева реализуется&nbsp;через
               <i>padding-top</i> и <i>padding-left родителя</i>.
             </p>
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               Отступы, как правило, делают в направлении от предыдущего элемента
               к следующему. Так элемент не будет толкать сам себя.
             </p>
-            <p class="article__paragraph">
+            <p class="section__paragraph">
               Изначально элемент статичен, а его положение может меняться только
               под воздействием свойств других блоков или свойств родителя.
             </p>
           </div>
         </div>
-      </article>
-      <article class="article" id="indent-last-possible">
+      </section>
+      <section class="section" id="indent-last-possible">
         <div class="container">
-          <h2 class="article__title">
+          <h2 class="section__title">
             Отступ задается последнему возможному элементу в DOM-дереве
           </h2>
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Вообще, margin задают исключительно между соседними элементами
             DOM-дерева. Для примера, посмотрите на этот список:
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_3.jpg"
             alt="Изображение с примером списка элементов DOM-дерева"
           />
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_4.jpg"
             alt="Изображение с примером списка элементов DOM-дерева"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Отступ делают за счёт соседних элементов, а не дочерних:
           </p>
-          <figure class="article__figure">
+          <figure class="section__figure">
             <img
-              class="article__figure-image"
+              class="section__figure-image"
               src="./assets/images/image_5.jpg"
               alt="Изображение с примером отступов соседних элементов DOM-дерева"
             />
-            <figcaption class="article__figure-figcaption">
-              <p class="article__figure-paragraph">
+            <figcaption class="section__figure-figcaption">
+              <p class="section__figure-paragraph">
                 <b>ВАЖНО:</b> здесь <i>.list-item</i> — последний возможный
                 элемент в котором мы задаём отступ, чтобы разделить списки.
               </p>
             </figcaption>
           </figure>
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо
-            обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне
+            обёртке <i>&lt;section&gt;</i> для достижения той же цели. Внешне
             останется все точно также, но так делать не рекомендуется.
           </p>
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Предыдущий пример был достаточно простым, но бывает вложенность
             значительно больше.
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_6.jpg"
             alt="Изображение с примером вложенности элементов DOM-дерева"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             В случае с заголовком, если ему необходим отступ сверху, последним
             элементом будет <i>section</i>. Именно для него задается
             <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>.
@@ -198,37 +194,37 @@
             обнулить.
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_7.jpg"
             alt="Изображение с примером отступа для заголовка"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Это необходимо для более простого поиска отступов в будущем — для
             вас или того, кто будет верстать после вас. Кроме того, возможны
             серьёзные проблемы при динамическом дублировании или выводе вёрстки
             с нестандартной структурой отступов.
           </p>
         </div>
-      </article>
+      </section>
 
-      <article class="article" id="indent-last-child">
+      <section class="section" id="indent-last-child">
         <div class="container">
-          <h2 class="article__title">
+          <h2 class="section__title">
             Для последнего элемента группы отступ всегда обнуляется
           </h2>
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Для наглядности возьмём наш предыдущий пример с рецептами
           </p>
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Между рецептами расстояние одинаковое. Можно заметить, что и до
             следующего блока расстояние такое же.
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_8.jpg"
             alt="Изображение с примером секции"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             В соответствии со вторым принципом: последний
             <i>margin</i> обнуляется, а нижний отступ задаётся через
             <i>padding</i> для section. Я чаще всего задаю <i>padding</i> для
@@ -236,49 +232,49 @@
             секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_9.jpg"
             alt="Изображение с примером секции"
           />
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_10_11.jpg"
             alt="Изображение с примером секции с подсветкой отступов"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Для большего понимания рассмотрим другой пример, который часто
             встречается на практике:
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_12.jpg"
             alt="Изображение скриншот отображения части HTML-страницы в браузере"
           />
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_13.jpg"
             alt="Изображение с разметкой части HTML-страницы в браузере"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Здесь нас интересует отступ между пунктами меню и списком с кнопкой
             поиска. Отступы между пунктами меню задаются так:
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_14.jpg"
             alt="Изображение с примером задания отступа для пункта меню"
           />
-          <p class="article__paragraph">
+          <p class="section__paragraph">
             Здесь нас интересует отступ между пунктами меню и списком с кнопкой
             поиска. Отступы между пунктами меню задаются так:
           </p>
           <img
-            class="article__image"
+            class="section__image"
             src="./assets/images/image_15.jpg"
             alt="Изображение с примером использования псевдоэлементов"
           />
         </div>
-      </article>
+      </section>
       <div class="additional-block">
         <div
           class="container container_additional-block container_bgcolor-grey"
@@ -309,7 +305,6 @@
           </p>
         </div>
       </div>
-      <!-- </article> -->
-    </main>
+    </div>
   </body>
 </html>

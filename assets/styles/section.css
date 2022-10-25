@@ -1,83 +1,83 @@
-.article {
+.section {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.article:first-child {
+.section:first-child {
   padding-top: 0;
 }
 
-.article:last-child {
+.section:last-child {
   padding-bottom: 0;
 }
 
-.article__title {
+.section__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 36px;
   line-height: 120%;
 }
 
-.article__paragraph {
+.section__paragraph {
   margin-bottom: 30px;
   font-size: 20px;
   line-height: 120%;
 }
 
-.article__paragraph:last-child {
+.section__paragraph:last-child {
   margin-bottom: 0;
 }
 
-.article__subsection {
+.section__subsection {
   margin-bottom: 30px;
 }
 
-.article__subsection_flow-root {
+.section__subsection_flow-root {
   display: flow-root;
 }
 
-.article__subsection:last-child {
+.section__subsection:last-child {
   margin-bottom: 0;
 }
 
-.article__image {
+.section__image {
   margin: 0 auto 30px;
   display: block;
 }
 
-.article__image:last-child {
+.section__image:last-child {
   margin: 0 auto;
 }
 
-.article__image_float-left {
+.section__image_float-left {
   float: left;
   margin: 0 30px 0 0;
 }
 
-.article__image_float-right {
+.section__image_float-right {
   float: right;
   margin: 0 0 0 30px;
 }
 
-.article__image.article__image_float-right ~ .article__paragraph {
+.section__image.section__image_float-right ~ .section__paragraph {
   padding-right: 600px;
 }
 
-.article__figure {
+.section__figure {
   margin-bottom: 30px;
   border: 1px solid black;
 }
 
-.article__figure-image {
+.section__figure-image {
   display: block;
   width: 100%;
 }
 
-.article__figure-figcaption {
+.section__figure-figcaption {
   padding: 15px 30px;
 }
 
-.article__figure-paragraph {
+.section__figure-paragraph {
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
