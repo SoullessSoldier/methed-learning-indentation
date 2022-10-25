@@ -24,11 +24,13 @@ body {
 a {
   font: inherit;
   text-decoration: none;
+  border: 1px solid transparent;
 }
 
 a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  /*text-decoration: underline;
+  text-underline-offset: 4px;*/
+  border-bottom: 1px solid #000;
 }
 
 .container {
